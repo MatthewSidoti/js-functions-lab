@@ -91,7 +91,8 @@ Complete the exercise in the space below:
 */
 
 function greetUser(name, timeOfDay){
-    console.log("Good" + " " + timeOfDay + "," + " " + name +"!" )
+    // console.log("Good" + timeOfDay + "," + " " + name +"!" )
+    console.log(`Good ${timeOfDay}, ${name}!`)
 }
 greetUser("Matthew", "morning")
 
@@ -123,6 +124,40 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
+function calcutlateTip(billAmount, tipPercentage){
+console.log(billAmount * tipPercentage)
+}
+calcutlateTip(50, .20)
 
 
-console.log('Exercise 7 Result:', calculateTip(50, 20));
+// console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+function basicCalculator(integerOne, intergerTwo, operator){
+    switch(operator){
+    case 'add':
+        return integerOne + intergerTwo;
+    case 'subtract':
+        return integerOne - intergerTwo;
+    case 'multiply':
+        return integerOne * intergerTwo;
+    case 'divide':
+         return integerOne / intergerTwo;
+        
+}}
+console.log(basicCalculator(10, 5, 'subtract'));
