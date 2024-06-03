@@ -112,6 +112,12 @@ function maxOfThree(numberOne, numberTwo, numberThree){
 }
 maxOfThree(17, 4, 9)
 
+// const maxOfThree = (numberOne, numberTwo, numberThree) => {
+//     console.log (Math.max(numberOne, numberTwo, numberThree))
+// }
+// maxOfThree(17, 4, 9) 
+
+
 /*
 Exercise 7: calculateTip()
 
@@ -161,3 +167,76 @@ function basicCalculator(integerOne, intergerTwo, operator){
         
 }}
 console.log(basicCalculator(10, 5, 'subtract'));
+
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+
+function calculateGrade(grade){
+    if (grade >= 90){
+        return ("A");
+    } else if (grade >= 80){
+        return ("B");
+    }
+    else if (grade >= 70){
+        return ("C");
+}
+else if (grade >= 60){
+    return ("D");}
+    else {
+        return ("F");}
+    }
+console.log(calculateGrade(100))
+
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
+
+Complete the exercise in the space below:
+*/
+
+
+function createUsername(nameFirst, nameLast){
+     console.log(nameFirst.slice(0,3) + nameLast.slice(0,3) + (nameFirst.length + nameLast.length))
+}
+createUsername('Samantha', 'Green')
+
+
+// /*
+// Exercise 12: numArgs()
+
+// Challenge yourself with numArgs. 
+// This function should return the count of arguments passed to it when called.
+
+// Complete the exercise in the space below:
+// */
+
+
+function numArgs() { 
+    return arguments.length;
+  } 
+console.log(numArgs(1,2,3,5,8));
+
+
+// console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
